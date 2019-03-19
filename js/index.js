@@ -1,5 +1,5 @@
-alert("Economy");
-
 $(document).ready(function(){
-	alert("Come soon");
-}
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
