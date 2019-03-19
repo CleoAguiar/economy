@@ -1,1 +1,3 @@
-alert("Come soon");
+$(document).ready(function(){
+	alert("Come soon");
+}
