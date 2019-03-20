@@ -1,5 +1,3 @@
 $(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
-  });
+    $('.dinheiro').mask('#.##0,00', {reverse: true});
 });
