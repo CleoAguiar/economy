@@ -19,12 +19,15 @@
     <div class="">
         <div class="jumbotron text-center">
             <h1>Calculadora</h1>
-            <form>
-                <label for="dinheiro">R$</label><input type="text" id="dinheiro" name="dinheiro" class="dinheiro form-control" style="display:inline-block">
+            <form class="form-inline input-group mb-3 mt-3 w-25 mx-auto">
+                <div class="input-group-prepend">
+                    <span for="dinheiro" class="input-group-text">R$</span>
+                </div>
+                <input type="text" id="dinheiro" name="dinheiro" class="dinheiro form-control" style="display:inline-block">
             </form>
             <div>
-                <button type="button" class=".btn .btn-primary" id="calc">Calcular</button>
-                <button type="reset" class=".btn .btn-secondary" id="reset">Limpar</button>
+                <button type="button" class="btn btn-primary" id="calc">Calcular</button>
+                <button type="reset" class="btn btn-secondary" id="reset">Limpar</button>
             </div>
         </div>
         <div class="container">
