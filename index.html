@@ -19,11 +19,14 @@
     <div class="">
         <div class="jumbotron text-center">
             <h1>Calculadora</h1>
-            <form class="form-inline input-group mb-3 mt-3 w-25 mx-auto">
+            <form class="was-validated form-inline input-group mb-3 mt-3 w-25 mx-auto" style="position:relative">
                 <div class="input-group-prepend">
                     <span for="dinheiro" class="input-group-text">R$</span>
                 </div>
-                <input type="text" id="dinheiro" name="dinheiro" class="dinheiro form-control" style="display:inline-block">
+                <input type="text" id="dinheiro" name="dinheiro" class="dinheiro form-control" required>
+<!--                 <div class="invalid-tooltip">
+                    Por favor, digite um valor.
+                </div> -->
             </form>
             <div>
                 <button type="button" class="btn btn-primary" id="calc">Calcular</button>
