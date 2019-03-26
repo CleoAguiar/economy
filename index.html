@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Economy</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -16,36 +19,37 @@
     <script src="js/index.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron text-center">
-            <h1>Calculadora</h1>
-            <form class="was-validated form-inline input-group mb-3 mt-3 w-25 mx-auto" style="position:relative">
-                <div class="input-group-prepend">
-                    <span for="dinheiro" class="input-group-text">R$</span>
-                </div>
-                <input type="text" id="dinheiro" name="dinheiro" class="dinheiro form-control" required>
-            </form>
-            <div>
-                <button type="button" class="btn btn-primary" id="calc">Calcular</button>
-                <button type="reset" class="btn btn-secondary" id="reset">Limpar</button>
+    <div class="jumbotron text-center">
+        <h1>Calculadora</h1>
+        <form class="was-validated form-inline input-group col-10 col-md-3 mb-3 mt-3 mx-auto" style="position:relative">
+            <div class="input-group-prepend">
+                <span for="dinheiro" class="input-group-text">R$</span>
             </div>
+            <input type="text" id="dinheiro" name="dinheiro" class="dinheiro form-control" required>
+        </form>
+        <div>
+            <button type="button" class="btn btn-primary" id="calc">Calcular</button>
+            <button type="reset" class="btn btn-secondary" id="reset">Limpar</button>
         </div>
-        <div class="invisible row mx-auto text-center">
-            <div class="col-12 col-md-6 investment">
+    </div>
+
+    <div class="container">
+        <div class="invisible row text-center">
+            <div class="col-12 col-md-6 mb-3 investment">
                 <h2 class="text-primary">Investimento</h2>
                 <h4 class="text-secondary"></h4>
             </div>
-            <div class="col-12 col-md-6 sporadic">
+            <div class="col-12 col-md-6 mb-3 sporadic">
                 <h2 class="text-primary">Gastos Esporádicos</h2>
                 <h4 class="text-secondary"></h4>
             </div>
         </div>
-        <div class="invisible row w-75 mx-auto text-center">
-            <div class="col-12 col-md-6 study">
+        <div class="invisible row text-center">
+            <div class="col-12 col-md-6 mb-2 study">
                 <h2 class="text-primary">Estudo</h2>
                 <h4 class="text-secondary"></h4>
             </div>
-            <div class="col-12 col-md-6 fixed">
+            <div class="col-12 col-md-6 mb-3 fixed">
                 <h2 class="text-primary">Gastos Fixos</h2>
                 <h4 class="text-secondary"></h4>
             </div>
